@@ -73,7 +73,7 @@
       $(document).ready(function(){
         actualizar();
 
-        var USUARIO = prompt("Please enter your name", "Harry Potter");
+        var USUARIO = prompt("Please enter your name", "Usuario");
         var puntajes = [];
         var TIEMPO_JUEGO = 60;
         var ETAPA = 1;
@@ -304,7 +304,6 @@
               });
             });
           },3000);
-
         }
       });
 
