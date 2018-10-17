@@ -93,7 +93,8 @@
         var tiempo_restante = TIEMPO_JUEGO;
         var lineas = [];
         var lineas_antiguas = [];
-        juego1 = [{x:280,y:460,selected:false},{x:520,y:460,selected:false},{x:780,y:600,selected:false},{x:470,y:240,selected:false},{x:800,y:240,selected:false},{x:400,y:300,selected:false},{x:400,y:600,selected:false},{x:250,y:600,selected:false},{x:690,y:400,selected:false}];
+        juego1 = [{x:280,y:460,selected:false},{x:520,y:460,selected:false},{x:780,y:600,selected:false},{x:470,y:240,selected:false},
+          {x:800,y:240,selected:false},{x:400,y:300,selected:false},{x:400,y:600,selected:false},{x:250,y:600,selected:false},{x:690,y:400,selected:false}];
         juego2 = [{x:180,y:310,selected:false},{x:200,y:600,selected:false},{x:240,y:240,selected:false},{x:280,y:700,selected:false},{x:300,y:390,selected:false},{x:400,y:280,selected:false},{x:500,y:410,selected:false},{x:570,y:600,selected:false},{x:150,y:450,selected:false}
         ,{x:800,y:320,selected:false},{x:620,y:300,selected:false},{x:770,y:680,selected:false},{x:710,y:500,selected:false}];
         elements = juego1;
@@ -220,7 +221,7 @@
 
           dibujar_tiempo();
           dibujar_reload();
-          context.drawImage(ini_image, actual_x - 50, actual_y - 50,size,size)
+          context.drawImage(ini_image, actual_x - 25, actual_y - 10,size,size)
         }
 
         function dibujar_tiempo() {
