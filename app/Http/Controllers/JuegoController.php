@@ -9,7 +9,8 @@ class JuegoController extends Controller
 {
     public function actualizar(Request $request)
     {
-      return Puntaje::where('etapa',$request["etapa"])->orderBy('puntaje','asc')->take(10)->get();
+
+      return Puntaje::where('etapa',$request["etapa"])->orderBy('puntaje','asc')->groupBy('usuario')->take(10)->get();
     }
 
     public function recibirPuntaje(Request $request){
